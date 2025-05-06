@@ -1,0 +1,49 @@
+name: Build & publish CV PDF
+
+on:
+  push:
+    paths:                                  # re-build only when .tex (or Bib) files change
+      - '**.tex'
+      - '**.bib'
+  workflow_dispatch:                        # allow manual runs from the UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1 Check out the repo (full history so we can push back)
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    # 2 Compile main.tex  → main.pdf
+    - name: Compile LaTeX document
+      uses: dante-ev/latex-action@v2
+      with:
+        root_file: main.tex                 # change if your root file is different
+        args: -pdf -interaction=nonstopmode
+
+    # 3a Upload the PDF as a build artifact (kept for 90 days)
+    - name: Upload CV artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: compiled-cv
+        path: main.pdf
+
+    # ──-- Optional extras --───────────────
+    # 3b Commit the PDF back to the repo so it lives at
+    #     https://raw.githubusercontent.com/<user>/<repo>/main/main.pdf
+    - name: Commit PDF to repository
+      if: github.ref == 'refs/heads/main'            # only on the main branch
+      run: |
+        git config --global user.name  "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add main.pdf
+        git commit -m "ci: auto-compiled CV PDF [skip ci]" || echo "Nothing to commit"
+        git push
+
+    # 3c (Alternative) Attach the PDF to a GitHub Release
+    # - uses: softprops/action-gh-release@v2
+    #   with:
+    #     files: main.pdf
