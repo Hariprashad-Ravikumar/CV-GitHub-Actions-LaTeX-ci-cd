@@ -35,5 +35,4 @@ This repository contains the LaTeX source files for my CV and utilizes a GitHub 
 
 ---
 
-## 📁 Repository Structure:
 
