@@ -1,4 +1,4 @@
-name: Build LaTeX PDF and Push to Repo
+name: Build LaTeX PDF
 
 on:
   push:
@@ -7,18 +7,18 @@ on:
       - '**/*.bib'
       - '**/*.sty'
       - '.github/workflows/latex-build.yml'
+      
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout your repo (full history)
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # Install LaTeX dependencies
       - name: Install TeX Live & latexmk
         run: |
           sudo apt-get update
@@ -29,18 +29,14 @@ jobs:
             texlive-fonts-recommended \
             latexmk
 
-      # Compile your PDF
       - name: Compile with latexmk
         run: |
-          latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+          latexmk -pdf \
+            -interaction=nonstopmode \
+            -halt-on-error \
+            main.tex
 
-      # Move PDF explicitly to root (ensures it's at repo root)
-      - name: Move PDF to repository root
-        run: |
-          mv main.pdf $GITHUB_WORKSPACE/CV_HARI.pdf
-
-      # Commit & push generated PDF back to repo
-      - name: Commit and push PDF
+      - name: Commit built PDF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -48,8 +44,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add main.pdf
           if ! git diff --cached --quiet; then
-            git commit -m "ci: auto-update PDF in root"
+            git commit -m "ci: rebuild PDF"
             git push
           else
-            echo "PDF unchanged, skipping commit."
+            echo "No changes to PDF; skipping commit."
           fi
