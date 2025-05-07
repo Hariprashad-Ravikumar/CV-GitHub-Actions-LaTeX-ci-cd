@@ -1,4 +1,4 @@
-name: Build LaTeX PDF
+name: Build LaTeX PDF and push to GitHub Pages repo
 
 on:
   push:
@@ -7,19 +7,16 @@ on:
       - '**/*.bib'
       - '**/*.sty'
       - '.github/workflows/latex-build.yml'
-      
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout code (CV_HARI repo)
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Install TeX Live & latexmk
+      - name: Install LaTeX & latexmk
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -29,23 +26,23 @@ jobs:
             texlive-fonts-recommended \
             latexmk
 
-      - name: Compile with latexmk
+      - name: Compile PDF
         run: |
-          latexmk -pdf \
-            -interaction=nonstopmode \
-            -halt-on-error \
-            main.tex
+          latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+          mv main.pdf CV_HARI.pdf
 
-      - name: Commit built PDF
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push PDF to GitHub Pages Repo
         run: |
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/Hariprashad-Ravikumar/hariprashad-ravikumar.github.io.git temp_repo
+          mkdir -p temp_repo/cv
+          cp CV_HARI.pdf temp_repo/cv/
+          cd temp_repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add main.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "ci: rebuild PDF"
-            git push
-          else
-            echo "No changes to PDF; skipping commit."
-          fi
+          git add cv/CV_HARI.pdf
+          git commit -m "Auto-update CV_HARI.pdf from CV_HARI repo"
+          git push origin main
+
+      - name: Clean PDF from original CV_HARI repo (optional cleanup)
+        run: |
+          rm CV_HARI.pdf
