@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -20,7 +20,7 @@
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
   \vspace{0.5em}
   PhD Candidate in Physics, specializing in HPC \& Machine Learning for High‐Dimensional Data \\
-  New Mexico State University (Las Cruces, NM)\\[0.4em]
+  %New Mexico State University (Las Cruces, NM)\\[0.4em]
 %  \textbf{Target location:} San Jose, CA 95123 — relocating Aug 2026
 \end{center}
 
@@ -33,68 +33,105 @@
 \textbf{GitHub:} \href{https://github.com/Hariprashad-Ravikumar}{github.com/Hariprashad-Ravikumar}  \\
 \end{tabularx}
 
+
+\section*{Experience}
+\hrule
+\vspace{-0.3em}
+\textbf{Graduate Research Assistant}, New Mexico State University \hfill (Aug 2021 - Present)
+\vspace{-0.2em}
+
+PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
+\vspace{-0.5em}
+\begin{itemize}
+    \item Designed and implemented a novel machine learning model using symbolic regression (PySR) to extract interpretable analytical functions from high-dimensional, noisy Monte Carlo simulation data.
+    \vspace{-1.5em}
+    \item Engineered custom, physics-constrained loss functions that improved model accuracy and generalizability, ensuring predictions adhered to fundamental physical principles.
+    \vspace{-0.5em}
+    \item Developed a high-performance data processing pipeline using parallelized Lua on HPC clusters to efficiently process multi-terabyte lattice QCD datasets, handling over 30,000 correlator evaluations.
+    \vspace{-0.5em}
+    \item Utilized stochastic sampling methods (jackknife, bootstrap) to rigorously quantify model uncertainties, delivering robust and reliable physical observables from simulation outputs.
+\end{itemize}
+
+
+\section*{Independent Collaborations}
+\hrule
+\vspace{-0.3em}
+\begin{enumerate}
+    \item \textbf{Los Alamos National Laboratory} - Collaborated with scientists on computational physics
+    \vspace{-0.7em}
+\begin{itemize}
+    \item Developed and optimized parallelized C++/CUDA data analysis codes for GPU-accelerated HPC clusters (NERSC Perlmutter), significantly reducing processing time for multi-terabyte datasets.
+    \vspace{-0.5em}
+    \item Designed and executed large-scale Monte Carlo simulations with advanced statistical analyses (Jackknife resampling, chi-squared with covariance matrices) to extract hadronic matrix elements, enabling precision studies of beyond the Standard Model physics.
+\end{itemize}
+
+\item  \textbf{North Carolina State University} - Collaborated with professor on theoretical physics
+\vspace{-0.5em}
+\begin{itemize}
+    \item Implemented Mathematica symbolic computation to analyze algebraic structures and symmetry constraints in interpolated Poincaré and conformal algebras.
+\end{itemize}
+
+\end{enumerate}
+
 \vspace{0.5em}
-\section*{Education}
-\vspace{0.3em}
+\section*{Technical Projects}
+\hrule
+\vspace{-0.3em}
+\begin{enumerate}
+    \item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
+    \vspace{-2em}
+    \begin{itemize}
+    \item Developed an end-to-end forecasting platform featuring CSV upload, pandas for data cleaning, and scikit-learn for linear regression modeling (R², MSE)
+    \vspace{-0.5em}
+    \item Engineered a Flask backend deployed on Azure and a React frontend on GitHub Pages, with a full CI/CD pipeline using GitHub Actions for automated testing and deployment.
+    \vspace{-0.5em}
+    \item Integrated the GPT-3.5 API to generate automated, natural-language summaries of forecasting results.
+    \end{itemize}
+    
 
-\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – July 2026 (expected)} \\
-\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} \\
-\textbf{MSc in Physics}, National Institute of Technology Jalandhar, India \hfill \textit{July 2019 – May 2021} \\
-\textbf{BSc in Physics}, Dr. N.G.P. Arts and Science College, India \hfill \textit{June 2015 – May 2018}
+    \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
+    \vspace{-2em}
+    \begin{itemize}
+        \item Implemented a two-layer neural network from the ground up in NumPy, building a deep understanding of backpropagation, activation functions (ReLU, softmax), and optimization.
+        \vspace{-0.5em}
+        \item Trained the model on 5,000 samples from the MNIST dataset, achieving $80\%$ accuracy within 60 epochs by tuning the learning rate.
+    \end{itemize}
 
+    \item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/Z2_LatticeGauge_Monte_Carlo_Simulation}{GitHub} \\
+    \vspace{-2em}
+    \begin{itemize}
+        \item Built a Python-based large-scale Monte Carlo simulation of $\mathbb{Z}_2$ gauge theory from first principles using the Metropolis-Hastings algorithm. Validated the simulation's accuracy by benchmarking results against established analytical predictions.
+    \end{itemize}
+\end{enumerate}
 
 %%
 \section*{Technical Skills}
+\hrule
 \vspace{-0.3em}
 \begin{tabbing}
 \hspace{3.5cm} \= \kill
 \textbf{Programming} \> Python, C++, CUDA, Bash, SQL, JavaScript, Lua, HTML/CSS, YAML \\
 \textbf{ML \& APIs} \> TensorFlow, PyTorch, Scikit-learn, Pandas, Flask, FastAPI\\
 \textbf{Cloud \& MLOps} \> Azure, AWS (Lambda, S3), CI/CD, Docker, Git\\
-\textbf{Methods \& HPC} \> Regression, Monte Carlo methods, GPU acceleration
+\textbf{Methods \& HPC} \> Regression, Monte Carlo methods, GPU acceleration, Parallel Computing
 \end{tabbing}
 
-\section*{Technical Project Portfolio}
-\vspace{-0.3em}
-\begin{itemize}
-    \item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub Repository} \\
-    End-to-end forecasting platform: CSV upload, pandas cleaning, scikit-learn linear regression (R², MSE), GPT-3.5 summaries, and Matplotlib plots. Flask backend on Azure with GitHub Actions CI/CD; frontend on GitHub Pages. Modular design supports future polynomial, ridge, and time-series models.  
-    \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Frontend URL}
+\section*{Education}
+\hrule
+\vspace{0.3em}
 
-    \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub Repository} \\
-    Two-layer NN in NumPy (ReLU hidden, softmax output); trained on 5\,000 samples with lr=0.1 to achieve ~80\% accuracy in 60 epochs.  
+\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – July 2026 (expected)} \\
+\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} \\
+%\textbf{MSc in Physics}, National Institute of Technology Jalandhar, India \hfill \textit{July 2019 – May 2021} \\
+%\textbf{BSc in Physics}, Dr. N.G.P. Arts and Science College, India \hfill \textit{June 2015 – May 2018}
 
-    \item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Z2_LatticeGauge_Monte_Carlo_Simulation}{GitHub Repository} \\
-    Python MCMC simulation of $\mathbb{Z}_2$ gauge theory using Metropolis; measured Wilson loops and benchmarked against analytical predictions.
-\end{itemize}
-
-
-\section*{PhD Research}
-\vspace{-0.3em}
-\textbf{Doctoral Advisor:} Dr. Michael Engelhardt (New Mexico State University, USA)
-\begin{itemize}
-    \item \textbf{Lattice QCD Calculations of TMDs:} Developed parallelized Lua code for HPC clusters running on CPUs. Processed multi-terabyte lattice QCD data involving $\sim$30,000 correlator evaluations. Applied Monte Carlo methods with jackknife and bootstrap resampling to extract transverse momentum-dependent parton distribution functions (TMDs). Leveraged PySR symbolic regression - a machine learning technique to derive interpretable analytical models from high-dimensional simulation outputs.
-\end{itemize}
-
-
-\section*{External Research Collaborations}
-\vspace{-0.3em}
-\textbf{Collaborators:} Dr. Rajan Gupta and Dr. Tanmoy Bhattacharya (Los Alamos National Laboratory, USA)
-\begin{itemize}
-    \item \textbf{Lattice QCD Calculations of CP Violation Contributions to nEDM:} Developed and optimized parallelized C++/CUDA codes for GPU-accelerated HPC clusters (NERSC Perlmutter) to process multi-terabyte lattice QCD datasets across multiple computational stages. Designed and executed large-scale Monte Carlo simulations with advanced statistical analyses (Jackknife resampling and Chi-squared statistic with covariance matrices) to extract hadronic matrix elements, enabling precision studies of nucleon EDMs and supporting investigations of CP-violating operators in the Standard Model and Beyond the Standard Model physics.
-\end{itemize}
-
-\textbf{Collaborator:} Dr. Chueng-Ryong Ji (North Carolina State University, USA)
-\begin{itemize}
-    \item \textbf{Interpolating Conformal Algebra:} Implemented Mathematica symbolic computation to analyze algebraic structures and symmetry constraints in interpolated Poincaré and conformal algebras.
-\end{itemize}
-%
 
 % Certification
 \section*{Certifications}
+\hrule
 \vspace{-0.3em}
 \begin{itemize}
     \item (Jun 2025) Getting Started with Accelerated Computing in CUDA C/C++ by NVIDIA
@@ -104,16 +141,19 @@
 
 
 \section*{Awards}
+\hrule
 \vspace{-0.3em}
 
 \begin{itemize}
     \item \textbf{2025 NMC Collaboration Grant}, awarded by the New Mexico Consortium at Los Alamos.
+    \vspace{-0.5em}
     \item \textbf{2023 George and Barbara Goedecke Physics Excellence Fund Scholarship}, awarded by the NMSU Physics Department
-
+    \vspace{-0.5em}
     \item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
 \end{itemize}
 
 \section*{Selected Talks}
+\hrule
 \vspace{-0.3em}
 \begin{itemize}
     \item (Jun 3, 2025) \href{https://hariprashad-ravikumar.github.io/talks/Los_Alamos_T2_talk_First_Principles_Lattice_QCD_Calculations_of_nEDMs__presentation_Hari_NMSU_June_03_2025.pdf}{\textit{"First Principles Lattice QCD Calculations of nEDMs"}}, T-2 Seminar, Theoretical Division, Los Alamos National Laboratory, USA
