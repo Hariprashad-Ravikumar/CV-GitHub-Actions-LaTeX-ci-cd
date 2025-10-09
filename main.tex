@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[a4paper, total={7.4in, 10in}]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -44,11 +44,11 @@
 PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \vspace{-0.5em}
 \begin{itemize}
-\item Achieved 93\%+ model fit accuracy by building an end-to-end ML pipeline processing 30,000+ multidimensional observables from Monte Carlo simulations using symbolic regression (PySR) with physics-constrained loss functions.
+\item Generated 30,000+ high-fidelity synthetic data points by solving Partial Differential Equations with large-scale Monte Carlo simulations and built an end-to-end AI for Science pipeline to model the underlying physics, achieving over 98\% predictive accuracy with symbolic regression machine learning.
 \vspace{-0.5em}
 \item Reduced data processing time 10× by developing GPU-accelerated CUDA C++ (cuFFT) pipelines for multi-terabyte Fourier transforms on HPC clusters.
 \vspace{-0.5em}
-\item Ensured numerical stability and reproducibility across multi-stage fitting and extrapolation workflows by creating production-grade Python and Mathematica packages for jackknife resampling and uncertainty propagation.
+\item Developed production-grade Python \& Mathematica packages for reproducible statistical analysis, ensuring numerical stability in multi-stage workflows (jackknife resampling, uncertainty propagation)
 \end{itemize}
 
 
@@ -56,20 +56,22 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{Los Alamos National Laboratory} - Computational Physics Collaboration \hfill \textit{(May 2024 - Present)}
+    \item \textbf{Los Alamos National Laboratory} - Computational Physics \hfill \textit{(May 2024 - Present)}
 \vspace{-0.5em}
 \begin{itemize}
-    \item Accelerated multi-terabyte scientific calculations by developing and optimizing parallelized C++ CUDA kernels for GPU-accelerated HPC clusters (NERSC Perlmutter), achieving significant runtime reduction in large-scale Monte Carlo simulations.
+    \item Accelerated multi-terabyte scientific calculations by developing and optimizing parallelized C++ CUDA kernels for GPU-accelerated HPC clusters (NERSC Perlmutter), significantly reducing runtime for large-scale Monte Carlo simulations.
     \vspace{-0.5em}
-    \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration, enabling robust, automated parallel analysis.
-    \vspace{-1.7em}
-    \item Increased model reliability through rigorous validation methods, applying AIC-based selection, chi-squared minimization with full covariance matrices, and bootstrap/jackknife resampling across 50,000 correlated data points.
+    \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration
+    \vspace{-0.5em}
+    \item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to analyze the properties of quantum systems and ensure numerical stability
+    \vspace{-0.9em}
+    \item Increased model reliability through rigorous statistical validation on over 50,000 correlated data points, applying methods like AIC-based selection and chi-squared minimization with full covariance matrices.
 \end{itemize}
 
-    \item  \textbf{North Carolina State University} - Mathematical Physics Collaboration \hfill \textit{(Dec 2020 - Present)}
+    \item  \textbf{North Carolina State University} - Mathematical Physics  \hfill \textit{(Dec 2020 - Present)}
 \vspace{-0.5em}
 \begin{itemize}
-    \item Implemented and managed Mathematica symbolic computation workflows on HPC clusters (NERSC Perlmutter) to analyze complex algebraic structures and symmetry constraints.
+    \item Implemented and managed Mathematica symbolic computation workflows on HPC clusters to analyze complex algebraic structures and symmetry constraints.
 \end{itemize}
 
 \end{enumerate}
@@ -79,30 +81,23 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
-    \vspace{-2em}
-    \begin{itemize}
-    \item Built a cloud-hosted ML forecasting platform with automated data ingestion, model training, and retrieval pipelines using AWS/Azure, Flask, and React.
-    \vspace{-0.5em}
-    \item Integrated GPT API to generate natural-language summaries, bridging structured data with NLP-driven insights.
-    \end{itemize}
-    
-
-    \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
-    \vspace{-2em}
-    \begin{itemize}
-        \item Implemented a two-layer neural network from the ground up in NumPy, building a deep understanding of backpropagation, activation functions (ReLU, softmax), and optimization.
-        \vspace{-0.5em}
-        \item Trained the model for the computer vision task of handwritten digit recognition on 5,000 MNIST samples, achieving $80\%$ accuracy within 60 epochs by tuning the learning rate.
-    \end{itemize}
-
     \item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
     \hfill \href{https://github.com/Hariprashad-Ravikumar/Z2_LatticeGauge_Monte_Carlo_Simulation}{GitHub} \\
     \vspace{-2em}
     \begin{itemize}
-         \item Implemented large-scale Monte Carlo simulations on HPC clusters, validating results against analytical benchmarks and optimizing data processing throughput for large datasets.
+         \item Developed a Physics-Based Simulation from scratch to generate synthetic lattice gauge configurations using Monte Carlo methods on HPC clusters, validating the generated data against known analytical benchmarks.
+    \end{itemize}
+    \item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
+    \vspace{-2em}
+    \begin{itemize}
+    \item Developed a full-stack ML forecasting platform on AWS/Azure featuring automated MLOps pipelines and a GPT API for generating natural-language insights.
+    \end{itemize}
+    \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
+    \vspace{-2em}
+    \begin{itemize}
+        \item Implemented and trained a neural network from scratch in NumPy for MNIST digit recognition, achieving 80\% accuracy by building and tuning core components like backpropagation and activation functions
     \end{itemize}
 \end{enumerate}
 
@@ -112,10 +107,10 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \vspace{-0.3em}
 \begin{tabbing}
 \hspace{3.5cm} \= \kill
-\textbf{Programming} \> Python, C++, CUDA, Bash, SQL, JavaScript, Lua, HTML/CSS, YAML \\
+\textbf{Programming} \> Python, C++, CUDA, Bash, SQL, Lua, HTML/CSS, YAML \\
 \textbf{ML \& APIs} \> Numba, TensorFlow, PyTorch, Scikit-learn, Pandas, cuFFT, cuDNN, Flask, FastAPI, RAG\\
 \textbf{Cloud \& MLOps} \> Azure, AWS (Lambda, S3), CI/CD, Docker, Git, SLURM\\
-\textbf{Methods \& HPC} \> MPI, GPU acceleration, Parallel Computing, Regression, Monte Carlo methods
+\textbf{Methods \& HPC} \> Parallel Computing (GPU, MPI), Numerical Methods (PDEs, Monte Carlo, Regression)
 \end{tabbing}
 
 \section*{Education}
@@ -134,9 +129,9 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
+    \item Getting Started with Accelerated Computing in CUDA C/C++ by NVIDIA
     \item \href{https://learn.nvidia.com/certificates?id=mMWLgny_SEC5DgHXY9XYEw}{Fundamentals of Accelerated Computing with CUDA Python by NVIDIA} 
     \item \href{https://www.coursera.org/account/accomplishments/verify/XG3YT41S0PF5}{Advanced Learning Algorithms by DeepLearning.AI} 
-    \item Getting Started with Accelerated Computing in CUDA C/C++ by NVIDIA
     \item \href{https://coursera.org/share/b9cffe9c5ba5832ffb99bf7abdd8c384}{Supervised Machine Learning: Regression and Classification by DeepLearning.AI} 
     \item \href{https://www.coursera.org/account/accomplishments/professional-cert/certificate/U0HU8UKT89L4}{Google Advanced Data Analytics Professional Certificate} 
 \end{itemize}
