@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper, total={7.4in, 10in}]{geometry}
+\usepackage[a4paper, total={7.5in, 10.9in}]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -19,8 +19,11 @@
 \begin{center}
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
   \vspace{0.5em}
-  PhD Candidate specializing in High-Performance Computing (HPC) and Deep Learning \\
+  PhD Candidate specializing in High-Performance Computing, Deep Learning, and AI for Science\\
   Expertise in GPU-accelerated computing with C++/CUDA and Python
+  %PhD Candidate specializing in AI for Physics-Based Simulation and High-Performance Computing (HPC)\\
+  %Expertise in GPU-accelerated computing with C++/CUDA and Deep Learning (PyTorch/TensorFlow) 
+  %Expertise in Statistical Modeling and Deep Learning (PyTorch/TensorFlow)
  \\
   %New Mexico State University (Las Cruces, NM)\\[0.4em]
 %  \textbf{Target location:} San Jose, CA 95123 — relocating Aug 2026
@@ -47,7 +50,7 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \begin{itemize}
 \item Generated 30,000+ high-fidelity synthetic data points by solving Partial Differential Equations with large-scale Monte Carlo simulations and built an end-to-end AI for Science pipeline to model the underlying physics, achieving over 98\% predictive accuracy with symbolic regression machine learning.
 \vspace{-0.5em}
-\item Reduced data processing time 10× by developing GPU-accelerated CUDA C++ (cuFFT) pipelines for multi-terabyte Fourier transforms on HPC clusters.
+\item Developed GPU-accelerated CUDA/C++ pipelines for large-scale FFT-based feature extraction, reducing data processing time by 10x
 \vspace{-0.5em}
 \item Developed production-grade Python, Lua, \& Mathematica packages for reproducible statistical analysis, ensuring numerical stability in multi-stage workflows (jackknife resampling, uncertainty propagation)
 \end{itemize}
@@ -64,8 +67,9 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
     \vspace{-0.5em}
     \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration
     \vspace{-0.5em}
-    \item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to analyze the properties of quantum systems and ensure numerical stability
-    \vspace{-0.9em}
+    %\item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to analyze the properties of quantum systems and ensure numerical stability
+    \item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to enhance simulation fidelity and ensure numerical stability
+    \vspace{-0.4em}
     \item Increased model reliability through rigorous statistical validation on over 50,000 correlated data points, applying methods like AIC-based selection and chi-squared minimization with full covariance matrices.
 \end{itemize}
 
@@ -77,23 +81,44 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 
 \end{enumerate}
 
+\section*{Publications}
+\hrule
+\vspace{-0.3em}
+\begin{enumerate}[leftmargin=1.5em]
+    \item C.-R. Ji, \textbf{H. Ravikumar}, \textit{"Interpolating conformal algebra in (1+1) dimensions,"} \textbf{Physical Review D} (Submitted, 2026). Preprint: \href{https://arxiv.org/abs/2601.19251}{arXiv:2601.19251 [hep-th]}
+    
+    %\item \textbf{H. Ravikumar} and C.-R. Ji, \textit{"Interpolating conformal algebra (3+1) between the instant form and the front form of relativistic dynamics,"} (In Preparation).
+\end{enumerate}
+
 \vspace{0.5em}
 \section*{Technical Projects}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
+    \item \textbf{AI-DataScience-Lab: Full-Stack Data Product}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
+    \vspace{-2em}
+    \begin{itemize}
+    \item Prototyped and deployed a scalable full-stack data tool (Python, Flask, Azure) to deliver on-demand data-driven insights and actionable recommendations, integrating an OpenAI API to demonstrate automated data storytelling and data interpretation.
+    \vspace{-0.5em}
+    \item Implemented an end-to-end statistical analysis pipeline using Python (Pandas) for data cleaning, statistical modeling (Scikit-learn) for regression, and Matplotlib for data visualization.
+    \end{itemize}
+
+    %\item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
+    \item \textbf{Physics Based Monte Carlo Simulation}
     \hfill \href{https://github.com/Hariprashad-Ravikumar/Z2_LatticeGauge_Monte_Carlo_Simulation}{GitHub} \\
     \vspace{-2em}
     \begin{itemize}
          \item Developed a Physics-Based Simulation from scratch to generate synthetic lattice gauge configurations using Monte Carlo methods on HPC clusters, validating the generated data against known analytical benchmarks.
     \end{itemize}
-    \item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
-    \vspace{-2em}
-    \begin{itemize}
-    \item Developed a full-stack ML forecasting platform on AWS/Azure featuring automated MLOps pipelines and a GPT API for generating natural-language insights.
-    \end{itemize}
+    
+    %\item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
+    %\hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
+    %\vspace{-2em}
+    %\begin{itemize}
+    %\item Developed a full-stack ML forecasting platform on AWS/Azure featuring automated MLOps pipelines and a GPT API for generating natural-language insights.
+    %\end{itemize}
+    \vspace{2em}
     \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
     \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
     \vspace{-2em}
@@ -118,13 +143,13 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \hrule
 \vspace{0.3em}
 
-\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May. 2027 (expected)} \\
+\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – Dec 2026 (expected)} \\
 %\textit{(Relevant Coursework: Advanced Computational Physics, Statistical Mechanics, Quantum Computing)}\\
 \textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} \\
 \textbf{MSc in Physics}, National Institute of Technology Jalandhar, India \hfill \textit{July 2019 – May 2021} \\
 \textbf{BSc in Physics}, Dr. N.G.P. Arts and Science College, India \hfill \textit{June 2015 – May 2018}
 
-
+\vspace{-1em}
 % Certification
 \section*{Certifications}
 \hrule
@@ -147,7 +172,7 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
     \vspace{-0.5em}
     \item \textbf{2023 George and Barbara Goedecke Physics Excellence Fund Scholarship}, awarded by the NMSU Physics Department
     \vspace{-0.5em}
-    \item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
+   %\item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
 \end{itemize}
 
 \section*{Selected Talks}
@@ -170,16 +195,16 @@ PhD Project: Lattice QCD and Machine Learning Approaches to TMD Physics
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
-    \item \textbf{Vice President}, Physics Graduate Student Organization (NMSU)  \hfill \textit{Sep 2025 -- Present} \\ Organized professional development events and served as the primary liaison between 40+ graduate students and faculty.
+    \item \textbf{Vice President}, Physics Graduate Student Organization (NMSU)  \hfill \textit{Aug 2025 -- Present} \\ Organized professional development events and served as the primary liaison between 40+ graduate students and faculty.
     
 \end{itemize}
 
-\section*{Relevant Graduate Coursework}
-\hrule
-\vspace{-0.3em}
-\begin{itemize}
-    \item Advanced Computational Physics, Statistical Mechanics, Quantum Computing
-\end{itemize}
+%\section*{Relevant Graduate Coursework}
+%\hrule
+%\vspace{-0.3em}
+%\begin{itemize}
+%    \item Advanced Computational Physics, Statistical Mechanics, %Quantum Computing
+%\end{itemize}
 
 
 
