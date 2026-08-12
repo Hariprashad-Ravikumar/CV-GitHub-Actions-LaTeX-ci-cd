@@ -19,8 +19,8 @@
 \begin{center}
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
   \vspace{0.5em}
-  PhD Candidate specializing in High-Performance Computing, Deep Learning, and AI for Science\\
-  Expertise in GPU-accelerated computing with C++/CUDA and Python
+  PhD Candidate specializing in Physics-Based Modeling, Predictive Analytics, and AI for Science%\\
+  %Expertise in Python, Machine Learning, and Full-Stack Data Science Applications
   %PhD Candidate specializing in AI for Physics-Based Simulation and High-Performance Computing (HPC)\\
   %Expertise in GPU-accelerated computing with C++/CUDA and Deep Learning (PyTorch/TensorFlow) 
   %Expertise in Statistical Modeling and Deep Learning (PyTorch/TensorFlow)
@@ -36,26 +36,58 @@
 \end{tabularx}
 \vspace{-1em}
 
+\section*{Summary}
+\hrule
+\vspace{0.3em}
+PhD physicist with 5+ years in HPC, ML for science, and physics-based
+simulation. Shipped production tools (Dash, CI/CD, Kubernetes, PyPI) at Western
+Digital. Seeking full-time roles in data science, ML engineering, or
+computational physics.
+\vspace{-0.5em}
 
 \section*{Experience}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 - Aug 2026)}
+    \item \textbf{HAMR Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Present)}
+    \textit{\textbf{HAMR DCSNR Simulation Web Application (NIMBLE)}}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Built a full-stack interactive simulation app using Python, Dash, and Plotly with real-time parameter sweeps, multi-run comparison, and automated PowerPoint/Excel report generation; adopted by cross-functional media and sputtering engineering teams
+        \vspace{-0.5em}
+        \item Implemented auto-fit THMap curve fitting (skew-normal thermal profile 
+      + RTS noise) and physics model pipeline with grain noise and reader 
+      Gaussian PSF convolution to compute unsqueezed/squeezed DCSNR metrics
+      \vspace{-0.5em}
+        \item Leveraged IndexedDB API for client-side state persistence and one-time data handoff across browser tabs, enabling seamless cross portal integration other apps
+        \vspace{-0.5em}
+        \item Deployed via CI/CD pipeline in Jenkins with Kubernetes; packaged 
+          as a modular PyPI-compatible Python library integrated into WD's 
+          internal multi-tool engineering platform
+    \end{itemize}
+\vspace{-0.5em}
+    \textit{\textbf{HAMR Physics Modeling}}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Developed a closed-form analytical model for HAMR switching probability and DCSNR from first principles, combining N\'{e}el-Arrhenius thermal activation and Stoner-Wohlfarth coherent rotation for L1$_0$ FePt grains; peer-reviewed publication manuscript in preparation
+        \vspace{-0.5em}
+        \item Validated model against Monte Carlo simulation and spin-stand data across grain ensembles with distributions of $H_k$, volume, and $T_c$
+        \vspace{-0.5em}
+        \item Quantified multi-write noise power accumulation and DCSNR degradation to provide areal density capability (ADC) and write endurance metrics, helping media design teams reduce adjacent track erasure (ATI \& xTI)
+    \end{itemize}
+    
 %\vspace{-0.2em}
 
 %\vspace{-0.3em}
-\item \textbf{Graduate Research Assistant}, NM State University, Las Cruces, NM \hfill \textit{(Aug 2021 - Present)}
+\item \textbf{Graduate Research Assistant}, NM State University, Las Cruces, NM \hfill \textit{(Aug 2021 -- Present)}
 \vspace{-0.2em}
 
-PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
+\textbf{PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches}
 \vspace{-0.5em}
 \begin{itemize}
 \item Generated 30,000+ high-fidelity synthetic data points by solving Partial Differential Equations with large-scale Hybrid Monte Carlo simulations (Markov Chain stochastic process) and built an end-to-end AI for Science pipeline to model the underlying physics, achieving over 98\% predictive accuracy with symbolic regression machine learning.
 \vspace{-0.5em}
 \item Engineered parallelized Bayesian inference pipelines across multi-CPU architectures to fit non-linear, high-dimensional models; utilized automatic differentiation and full covariance matrices to ensure exact error propagation and numerical stability in multi-stage workflows (jackknife resampling)
-\vspace{-0.5em}
-\item Developed GPU-accelerated CUDA/C++ pipelines for large-scale FFT-based feature extraction, reducing data processing time by 10x
 \vspace{-0.5em}
 \end{itemize}
 \end{enumerate}
@@ -65,7 +97,7 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{Los Alamos National Laboratory} - Lattice Quantum Chromodynamics \hfill \textit{(May 2024 - Present)}
+    \item \textbf{Los Alamos National Laboratory} - Lattice Quantum Chromodynamics \hfill \textit{(May 2024 -- Present)}
 \vspace{-0.5em}
 \begin{itemize}
     \item Accelerated multi-terabyte scientific calculations by developing and optimizing parallelized C++ CUDA kernels for GPU-accelerated HPC clusters (NERSC Perlmutter), significantly reducing runtime for large-scale Hamiltonian Monte Carlo simulations.
@@ -73,9 +105,9 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
     \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration
     \vspace{-0.5em}
     %\item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to analyze the properties of quantum systems and ensure numerical stability
-    \item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to enhance simulation fidelity and ensure numerical stability
+    %\item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to enhance simulation fidelity and ensure numerical stability
     \vspace{-0.4em}
-    \item Increased model reliability through rigorous statistical validation on over 50,000 correlated data points, applying methods like AIC-based selection and chi-squared minimization with full covariance matrices.
+    %\item Increased model reliability through rigorous statistical validation on over 50,000 correlated data points, applying methods like AIC-based selection and chi-squared minimization with full covariance matrices.
 \end{itemize}
 
     \item  \textbf{North Carolina State University} - Mathematical Physics  \hfill \textit{(Dec 2020 - Present)}
@@ -121,13 +153,13 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
     %\begin{itemize}
     %\item Developed a full-stack ML forecasting platform on AWS/Azure featuring automated MLOps pipelines and a GPT API for generating natural-language insights.
     %\end{itemize}
-    \vspace{2em}
-    \item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
-    \vspace{-2em}
-    \begin{itemize}
-        \item Implemented and trained a neural network from scratch in NumPy for MNIST digit recognition, achieving 80\% accuracy by building and tuning core components like backpropagation and activation functions
-    \end{itemize}
+    %\vspace{2em}
+    %\item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
+    %\hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
+    %\vspace{-2em}
+    %\begin{itemize}
+        %\item Implemented and trained a neural network from scratch in NumPy for MNIST digit recognition, achieving 80\% accuracy by building and tuning core components like backpropagation and activation functions
+    %\end{itemize}
 \end{enumerate}
 
 %%
@@ -137,8 +169,8 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
 \begin{tabbing}
 \hspace{3.5cm} \= \kill
 \textbf{Programming} \> Python, C++, CUDA, Bash, SQL, Lua, HTML/CSS, YAML \\
-\textbf{ML \& APIs} \> Numba, TensorFlow, PyTorch, Scikit-learn, Pandas, cuFFT, cuDNN, Flask, FastAPI, RAG\\
-\textbf{Cloud \& MLOps} \> Azure, AWS (Lambda, S3), CI/CD, Docker, Git, SLURM, Nsight\\
+\textbf{ML \& APIs}    \> PyTorch, TensorFlow, Scikit-learn, Pandas, Dash, Plotly, Flask, FastAPI, Numba\\
+\textbf{Cloud \& MLOps}\> Azure, AWS (S3, Lambda), Docker, Kubernetes, Jenkins, CI/CD, Git, SLURM\\
 \textbf{Methods \& HPC} \> Parallel Computing (GPU, MPI), Numerical Methods (PDEs, Monte Carlo, Regression)
 \end{tabbing}
 
@@ -178,23 +210,23 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
    %\item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
 \end{itemize}
 
-\section*{Selected Talks}
-\hrule
-\vspace{-0.3em}
-\begin{itemize}
-    \item (Jun 3, 2025) \href{https://hariprashad-ravikumar.github.io/talks/Los_Alamos_T2_talk_First_Principles_Lattice_QCD_Calculations_of_nEDMs__presentation_Hari_NMSU_June_03_2025.pdf}{\textit{"First Principles Lattice QCD Calculations of nEDMs"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
+%\section*{Selected Talks}
+%\hrule
+%\vspace{-0.3em}
+%\begin{itemize}
+%    \item (Jun 3, 2025) \href{https://hariprashad-ravikumar.github.io/talks/Los_Alamos_T2_talk_First_Principles_Lattice_QCD_Calculations_of_nEDMs__presentation_Hari_NMSU_June_03_2025.pdf}{\textit{"First Principles Lattice QCD Calculations of nEDMs"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
+%
+%    %\item (Jun 07, 2025) \href{https://indico.cfnssbu.physics.sunysb.edu/event/111/contributions/1001/attachments/335/552/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____CFNS_school_presentation_Hari__NMSU_Jun_07_2024.pdf}{\textit{"Lattice QCD calculations of Sivers TMD $x$ dependency"}}, Invited talk at the CFNS Summer School, \textbf{Stony Brook University}, USA
 
-    %\item (Jun 07, 2025) \href{https://indico.cfnssbu.physics.sunysb.edu/event/111/contributions/1001/attachments/335/552/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____CFNS_school_presentation_Hari__NMSU_Jun_07_2024.pdf}{\textit{"Lattice QCD calculations of Sivers TMD $x$ dependency"}}, Invited talk at the CFNS Summer School, \textbf{Stony Brook University}, USA
+%    \item (May 16, 2024) \href{https://hariprashad-ravikumar.github.io/talks/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____presentation_Hari__NMSU_May_16_2024.pdf}{\textit{"Lattice QCD Calculations of $x$ Dependence of Sivers TMD"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
+%
+%    \item (June 15, 2023) \href{https://indico.jlab.org/event/717/contributions/12720/attachments/9865/14525/Lattice_QCD_calculations_of_TMDs_HUGS_presentation_Hari_NMSU_Jun_15_2023__updated_%20(1).pdf}{\textit{"Lattice QCD calculations of TMDs"}}, HUGS Student Seminar, \textbf{Thomas Jefferson National Accelerator Facility}, USA
+%\end{itemize}
 
-    \item (May 16, 2024) \href{https://hariprashad-ravikumar.github.io/talks/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____presentation_Hari__NMSU_May_16_2024.pdf}{\textit{"Lattice QCD Calculations of $x$ Dependence of Sivers TMD"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
-
-    \item (June 15, 2023) \href{https://indico.jlab.org/event/717/contributions/12720/attachments/9865/14525/Lattice_QCD_calculations_of_TMDs_HUGS_presentation_Hari_NMSU_Jun_15_2023__updated_%20(1).pdf}{\textit{"Lattice QCD calculations of TMDs"}}, HUGS Student Seminar, \textbf{Thomas Jefferson National Accelerator Facility}, USA
-\end{itemize}
-
-\noindent\textit{Full list available at:} \href{https://hariprashad-ravikumar.github.io/talks}{hariprashad-ravikumar.github.io/talks}
+%\noindent\textit{Full list available at:} \href{https://hariprashad-ravikumar.github.io/talks}{hariprashad-ravikumar.github.io/talks}
 
 
-\section*{Volunteering}
+\section*{Leadership}
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
@@ -206,7 +238,7 @@ PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
-    \item Quantum Computing, Advanced Computational Physics, Statistical Mechanics
+    \item Quantum Computing, Advanced Computational Physics, Statistical Mechanics, Electromagnetic Theory I \& II
 \end{itemize}
 
 
