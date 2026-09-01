@@ -49,31 +49,20 @@ computational physics.
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-    \item \textbf{HAMR Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
-    \textit{\textbf{HAMR DCSNR Simulation Web Application (NIMBLE)}}
+        \item \textbf{Media Test Engineering Intern (HAMR Modeling \& Simulation)}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
     \vspace{-0.5em}
     \begin{itemize}
-        \item Built a full-stack interactive simulation app using Python, Dash, and Plotly with real-time parameter sweeps, multi-run comparison, and automated PowerPoint/Excel report generation; adopted by cross-functional media and sputtering engineering teams
+        \item Built and shipped a full-stack physics simulation web app (Python, Dash, Plotly) that lets engineers run experiments computationally instead of on physical hardware; used daily in production by 40+ senior R\&D engineers and subject-matter experts across the company's US and Japan sites
         \vspace{-0.5em}
-        \item Implemented auto-fit THMap curve fitting (skew-normal thermal profile 
-      + RTS noise) and physics model pipeline with grain noise and reader 
-      Gaussian PSF convolution to compute unsqueezed/squeezed DCSNR metrics
-      \vspace{-0.5em}
-        \item Leveraged IndexedDB API for client-side state persistence and one-time data handoff across browser tabs, enabling seamless cross portal integration other apps
+        \item Added real-time parameter sweeps, side-by-side run comparison, and one-click auto-export to PowerPoint/Excel; built client-side state management with IndexedDB API for persistent, cross-tab data handoff
         \vspace{-0.5em}
-        \item Deployed via CI/CD pipeline in Jenkins with Kubernetes; packaged 
-          as a modular PyPI-compatible Python library integrated into WD's 
-          internal multi-tool engineering platform
-    \end{itemize}
-\vspace{-0.5em}
-    \textit{\textbf{HAMR Physics Modeling}}
-    \vspace{-0.5em}
-    \begin{itemize}
-        \item Developed a closed-form analytical model for HAMR switching probability and DCSNR from first principles, combining N\'{e}el-Arrhenius thermal activation and Stoner-Wohlfarth coherent rotation for L1$_0$ FePt grains; peer-reviewed publication manuscript in preparation
+        \item Packaged the tool as a modular, PyPI-installable Python library with a clean API; deployed on Kubernetes via a Jenkins CI/CD pipeline and integrated it into a broader internal engineering platform alongside related analysis tools
         \vspace{-0.5em}
-        \item Validated model against Monte Carlo simulation and spin-stand data across grain ensembles with distributions of $H_k$, volume, and $T_c$
+        \item Derived a closed-form analytical model of magnetic grain switching behavior from first principles, combining thermal-activation and coherent-rotation theory to predict switching time, signal noise, and error probability across repeated write cycles; validated against Monte Carlo simulation and experimental lab data, with core findings in preparation for peer-reviewed publication
         \vspace{-0.5em}
-        \item Quantified multi-write noise power accumulation and DCSNR degradation to provide areal density capability (ADC) and write endurance metrics, helping media design teams reduce adjacent track erasure (ATI \& xTI)
+        \item Applied statistical modeling and curve fitting to identify causal drivers of storage performance, letting engineers predict and reduce data-integrity errors computationally, removing a hardware-test step from the R\&D loop and cutting testing costs
+        \vspace{-0.5em}
+        \item Presented results at PhD Expo 2026 (50+ attendees) and multiple internal engineering reviews (30+ attendees each), including a cross-site review with the company's Japan R\&D team
     \end{itemize}
     
 %\vspace{-0.2em}
