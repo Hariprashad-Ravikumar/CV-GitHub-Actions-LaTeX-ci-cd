@@ -19,14 +19,7 @@
 \begin{center}
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
   \vspace{0.5em}
-  PhD Candidate specializing in Physics-Based Modeling, Predictive Analytics, and AI for Science%\\
-  %Expertise in Python, Machine Learning, and Full-Stack Data Science Applications
-  %PhD Candidate specializing in AI for Physics-Based Simulation and High-Performance Computing (HPC)\\
-  %Expertise in GPU-accelerated computing with C++/CUDA and Deep Learning (PyTorch/TensorFlow) 
-  %Expertise in Statistical Modeling and Deep Learning (PyTorch/TensorFlow)
- \\
-  %New Mexico State University (Las Cruces, NM)\\[0.4em]
-%  \textbf{Target location:} San Jose, CA 95123 — relocating Aug 2026
+  PhD Candidate specializing in Physics-Based Modeling, Predictive Analytics, and AI for Science
 \end{center}
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
@@ -49,7 +42,7 @@ computational physics.
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-        \item \textbf{Media Test Engineering Intern (HAMR Modeling \& Simulation)}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
+        \item \textbf{HAMR Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
     \vspace{-0.5em}
     \begin{itemize}
         \item Built and shipped a full-stack physics simulation web app (Python, Dash, Plotly) that lets engineers run experiments computationally instead of on physical hardware; used daily in production by 40+ senior R\&D engineers and subject-matter experts across the company's US and Japan sites
@@ -93,10 +86,6 @@ computational physics.
     \vspace{-0.5em}
     \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration
     \vspace{-0.5em}
-    %\item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to analyze the properties of quantum systems and ensure numerical stability
-    %\item Investigated advanced simulation techniques using gradient flow, a method conceptually similar to Flow-Based Generative Models, to enhance simulation fidelity and ensure numerical stability
-    \vspace{-0.4em}
-    %\item Increased model reliability through rigorous statistical validation on over 50,000 correlated data points, applying methods like AIC-based selection and chi-squared minimization with full covariance matrices.
 \end{itemize}
 
     \item  \textbf{North Carolina State University} - Mathematical Physics  \hfill \textit{(Dec 2020 - Present)}
@@ -107,18 +96,20 @@ computational physics.
 
 \end{enumerate}
 
-\section*{Selected Publications \hfill \normalsize\normalfont \href{https://scholar.google.com/citations?user=o6cDFRwAAAAJ&hl=en}{Google Scholar}}
-\hrule
-\vspace{-0.3em}
-\begin{enumerate}[leftmargin=1.5em]
-    \item C.-R. Ji and \textbf{H. Ravikumar}, \textit{"Interpolating conformal algebra in (1+1) dimensions,"} \textbf{Physical Review D} 113, 096018 (May 2026). DOI: \href{https://doi.org/10.1103/prlq-4j1l}{10.1103/prlq-4j1l}.
-\end{enumerate}
-
 \vspace{0.5em}
 \section*{Technical Projects}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
+        \item \textbf{Cost-Aware Multi-Agent LLM Router}  
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/Cost-Aware-Multi-Agent-LLM-Router}{GitHub} $|$ \href{https://calibrated-router-768949786238.us-central1.run.app/}{Live Demo} \\
+    \vspace{-2em}
+    \begin{itemize}
+    \item Cut LLM inference cost 93.9\% versus always using the top-tier model, with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout, by designing a calibrated confidence router (logistic regression over logprob uncertainty, self-consistency dispersion, and embedding-distance features) that escalates only the prompts likely to need a costlier model
+    \vspace{-0.5em}
+    \item Validated router confidence for honesty, not just raw accuracy, using Expected Calibration Error and Brier score, then deployed it as a production FastAPI service with Postgres decision logging, Redis caching, and an async circuit breaker on Google Cloud Run
+    \end{itemize}
+    
     \item \textbf{AI-DataScience-Lab: Full-Stack Data Product}  
     \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
     \vspace{-2em}
@@ -127,28 +118,13 @@ computational physics.
     \vspace{-0.5em}
     \item Implemented an end-to-end statistical analysis pipeline using Python (Pandas) for data cleaning, statistical modeling (Scikit-learn) for regression, and Matplotlib for data visualization.
     \end{itemize}
+\end{enumerate}
 
-    %\item \textbf{$\mathbb{Z}_2$ Lattice Gauge Monte Carlo Simulation}  
-    \item \textbf{Physics Based Monte Carlo Simulation}
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Z2_LatticeGauge_Monte_Carlo_Simulation}{GitHub} \\
-    \vspace{-2em}
-    \begin{itemize}
-         \item Developed a Physics-Based Simulation from scratch to generate synthetic lattice gauge configurations using Monte Carlo methods on HPC clusters, validating the generated data against known analytical benchmarks.
-    \end{itemize}
-    
-    %\item \textbf{AI-DataScience-Lab: Cloud-Hosted Forecasting App}  
-    %\hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
-    %\vspace{-2em}
-    %\begin{itemize}
-    %\item Developed a full-stack ML forecasting platform on AWS/Azure featuring automated MLOps pipelines and a GPT API for generating natural-language insights.
-    %\end{itemize}
-    %\vspace{2em}
-    %\item \textbf{Neural Network from Scratch with \texttt{NumPy}}  
-    %\hfill \href{https://github.com/Hariprashad-Ravikumar/Neural-Network-from-Scratch-with-NumPy}{GitHub} \\
-    %\vspace{-2em}
-    %\begin{itemize}
-        %\item Implemented and trained a neural network from scratch in NumPy for MNIST digit recognition, achieving 80\% accuracy by building and tuning core components like backpropagation and activation functions
-    %\end{itemize}
+\section*{Selected Publications \hfill \normalsize\normalfont \href{https://scholar.google.com/citations?user=o6cDFRwAAAAJ&hl=en}{Google Scholar}}
+\hrule
+\vspace{-0.3em}
+\begin{enumerate}[leftmargin=1.5em]
+    \item C.-R. Ji and \textbf{H. Ravikumar}, \textit{"Interpolating conformal algebra in (1+1) dimensions,"} \textbf{Physical Review D} 113, 096018 (May 2026). DOI: \href{https://doi.org/10.1103/prlq-4j1l}{10.1103/prlq-4j1l}.
 \end{enumerate}
 
 %%
@@ -169,9 +145,7 @@ computational physics.
 
 \textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – Dec 2026 (expected)} \\
 %\textit{(Relevant Coursework: Advanced Computational Physics, Statistical Mechanics, Quantum Computing)}\\
-\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} \\
-\textbf{MSc in Physics}, National Institute of Technology Jalandhar, India \hfill \textit{July 2019 – May 2021} \\
-\textbf{BSc in Physics}, Dr. N.G.P. Arts and Science College, India \hfill \textit{June 2015 – May 2018}
+\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} 
 
 \vspace{-1em}
 % Certification
@@ -179,7 +153,6 @@ computational physics.
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
-    \item Getting Started with Accelerated Computing in CUDA C/C++ by NVIDIA
     \item \href{https://learn.nvidia.com/certificates?id=mMWLgny_SEC5DgHXY9XYEw}{Fundamentals of Accelerated Computing with CUDA Python by NVIDIA} 
     \item \href{https://www.coursera.org/account/accomplishments/verify/XG3YT41S0PF5}{Advanced Learning Algorithms by DeepLearning.AI} 
     \item \href{https://coursera.org/share/b9cffe9c5ba5832ffb99bf7abdd8c384}{Supervised Machine Learning: Regression and Classification by DeepLearning.AI} 
@@ -198,21 +171,6 @@ computational physics.
     \vspace{-0.5em}
    %\item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
 \end{itemize}
-
-%\section*{Selected Talks}
-%\hrule
-%\vspace{-0.3em}
-%\begin{itemize}
-%    \item (Jun 3, 2025) \href{https://hariprashad-ravikumar.github.io/talks/Los_Alamos_T2_talk_First_Principles_Lattice_QCD_Calculations_of_nEDMs__presentation_Hari_NMSU_June_03_2025.pdf}{\textit{"First Principles Lattice QCD Calculations of nEDMs"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
-%
-%    %\item (Jun 07, 2025) \href{https://indico.cfnssbu.physics.sunysb.edu/event/111/contributions/1001/attachments/335/552/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____CFNS_school_presentation_Hari__NMSU_Jun_07_2024.pdf}{\textit{"Lattice QCD calculations of Sivers TMD $x$ dependency"}}, Invited talk at the CFNS Summer School, \textbf{Stony Brook University}, USA
-
-%    \item (May 16, 2024) \href{https://hariprashad-ravikumar.github.io/talks/Lattice_QCD_calculations_of_Sivers_TMD_x_dependance____presentation_Hari__NMSU_May_16_2024.pdf}{\textit{"Lattice QCD Calculations of $x$ Dependence of Sivers TMD"}}, T-2 Seminar, Theoretical Division, \textbf{Los Alamos National Laboratory}, USA
-%
-%    \item (June 15, 2023) \href{https://indico.jlab.org/event/717/contributions/12720/attachments/9865/14525/Lattice_QCD_calculations_of_TMDs_HUGS_presentation_Hari_NMSU_Jun_15_2023__updated_%20(1).pdf}{\textit{"Lattice QCD calculations of TMDs"}}, HUGS Student Seminar, \textbf{Thomas Jefferson National Accelerator Facility}, USA
-%\end{itemize}
-
-%\noindent\textit{Full list available at:} \href{https://hariprashad-ravikumar.github.io/talks}{hariprashad-ravikumar.github.io/talks}
 
 
 \section*{Leadership}
