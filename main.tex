@@ -10,184 +10,138 @@
 \usepackage{tabularx}
 \usepackage{comment}
 
-
-
 \titleformat{\section}{\large\bfseries}{}{0em}{}
 
 \begin{document}
 
 \begin{center}
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
-  \vspace{0.5em}
-  PhD Candidate specializing in Physics-Based Modeling, Predictive Analytics, and AI for Science
+  \textbf{Machine Learning / Research Engineer} $|$ PhD Physics, Dec 2026 $|$ CUDA $\cdot$ HPC $\cdot$ LLM Systems \\[0.3em]
+  San Jose, CA $\cdot$ Available Jan 2027 \\[0.4em]
+  \href{mailto:hari1729@nmsu.edu}{hari1729@nmsu.edu} $\cdot$ +1 575-249-9610 $\cdot$ \href{https://www.linkedin.com/in/hariprashad-ravikumar}{linkedin.com/in/hariprashad-ravikumar} \\
+  \href{https://github.com/Hariprashad-Ravikumar}{github.com/Hariprashad-Ravikumar} $\cdot$ \href{https://hariprashad-ravikumar.github.io}{hariprashad-ravikumar.github.io}
 \end{center}
 
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Website:} \href{https://hariprashad-ravikumar.github.io}{hariprashad-ravikumar.github.io} & \textbf{Email:} \href{mailto:hari1729@nmsu.edu}{hari1729@nmsu.edu}  \\
-    \textbf{LinkedIn:} \href{https://www.linkedin.com/in/hariprashad-ravikumar}{linkedin.com/in/hariprashad-ravikumar} & \textbf{Phone:} +1 575-249-9610 \\
-    \textbf{GitHub:} \href{https://github.com/Hariprashad-Ravikumar}{github.com/Hariprashad-Ravikumar}  &\textbf{Location:}  San Jose, CA 
-\end{tabularx}
-\vspace{-1em}
-
-\section*{Summary}
-\hrule
 \vspace{0.3em}
-PhD physicist with 5+ years in HPC, ML for science, and physics-based
-simulation. Shipped production tools (Dash, CI/CD, Kubernetes, PyPI) at Western
-Digital. Seeking full-time roles in data science, ML engineering, or
-computational physics.
-\vspace{-0.5em}
 
 \section*{Experience}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-        \item \textbf{HAMR Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
+    \item \textbf{HAMR Modeling and Simulation Intern}, Western Digital, San Jose, CA \hfill \textit{(May 2026 -- Aug 2026)}
     \vspace{-0.5em}
     \begin{itemize}
-        \item Built and shipped a full-stack physics simulation web app (Python, Dash, Plotly) that lets engineers run experiments computationally instead of on physical hardware; used daily in production by 40+ senior R\&D engineers and subject-matter experts across the company's US and Japan sites
+        \item Shipped a full-stack physics simulation web app (Python, Dash, Plotly) that lets engineers run experiments computationally instead of on physical hardware; used daily in production by 40+ senior R\&D engineers and subject-matter experts across the company's US and Japan sites
         \vspace{-0.5em}
-        \item Added real-time parameter sweeps, side-by-side run comparison, and one-click auto-export to PowerPoint/Excel; built client-side state management with IndexedDB API for persistent, cross-tab data handoff
+        \item Cut per-experiment turnaround for those 40+ engineers with real-time parameter sweeps, side-by-side run comparison, one-click PowerPoint/Excel export, and IndexedDB cross-tab persistence
         \vspace{-0.5em}
-        \item Packaged the tool as a modular, PyPI-installable Python library with a clean API; deployed on Kubernetes via a Jenkins CI/CD pipeline and integrated it into a broader internal engineering platform alongside related analysis tools
+        \item Packaged the tool as a PyPI-installable Python library, deployed it on Kubernetes through a Jenkins CI/CD pipeline, and integrated it into the internal engineering platform alongside related analysis tools
         \vspace{-0.5em}
-        \item Derived a closed-form analytical model of magnetic grain switching behavior from first principles, combining thermal-activation and coherent-rotation theory to predict switching time, signal noise, and error probability across repeated write cycles; validated against Monte Carlo simulation and experimental lab data, with core findings in preparation for peer-reviewed publication
+        \item Derived a closed-form model of magnetic grain switching from first principles, combining thermal-activation and coherent-rotation theory to predict switching time, signal noise, and error probability across repeated write cycles
         \vspace{-0.5em}
-        \item Applied statistical modeling and curve fitting to identify causal drivers of storage performance, letting engineers predict and reduce data-integrity errors computationally, removing a hardware-test step from the R\&D loop and cutting testing costs
+        \item Validated that model against Monte Carlo simulation and experimental lab data; core findings are in preparation for peer-reviewed publication
+        \vspace{-0.5em}
+        \item Identified causal drivers of storage performance through statistical modeling and curve fitting, which let engineers predict and reduce data-integrity errors computationally and removed a hardware-test step from the R\&D loop
         \vspace{-0.5em}
         \item Presented results at PhD Expo 2026 (50+ attendees) and multiple internal engineering reviews (30+ attendees each), including a cross-site review with the company's Japan R\&D team
     \end{itemize}
-    
-%\vspace{-0.2em}
 
-%\vspace{-0.3em}
-\item \textbf{Graduate Research Assistant}, NM State University, Las Cruces, NM \hfill \textit{(Aug 2021 -- Present)}
-\vspace{-0.2em}
+    \item \textbf{Graduate Research Assistant}, NM State University, Las Cruces, NM \hfill \textit{(Aug 2021 -- Present)}
+    \vspace{-0.2em}
 
-\textbf{PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches}
-\vspace{-0.5em}
-\begin{itemize}
-\item Generated 30,000+ high-fidelity synthetic data points by solving Partial Differential Equations with large-scale Hybrid Monte Carlo simulations (Markov Chain stochastic process) and built an end-to-end AI for Science pipeline to model the underlying physics, achieving over 98\% predictive accuracy with symbolic regression machine learning.
-\vspace{-0.5em}
-\item Engineered parallelized Bayesian inference pipelines across multi-CPU architectures to fit non-linear, high-dimensional models; utilized automatic differentiation and full covariance matrices to ensure exact error propagation and numerical stability in multi-stage workflows (jackknife resampling)
-\vspace{-0.5em}
-\end{itemize}
+    \textbf{PhD Project: Lattice Quantum Chromodynamics \& Machine Learning Approaches}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Generated 30,000+ synthetic data points by solving Partial Differential Equations with Hybrid Monte Carlo simulations (Markov Chain stochastic process), then built an AI for Science pipeline that models the underlying physics to over 98\% predictive accuracy using symbolic regression
+        \vspace{-0.5em}
+        \item Fit non-linear, high-dimensional models to those 30,000+ points with parallelized Bayesian inference across multi-CPU architectures, using automatic differentiation, full covariance matrices, and jackknife resampling for exact error propagation
+    \end{itemize}
 \end{enumerate}
 
-
-\section*{Independent Collaborations}
-\hrule
-\vspace{-0.3em}
-\begin{enumerate}
-    \item \textbf{Los Alamos National Laboratory} - Lattice Quantum Chromodynamics \hfill \textit{(May 2024 -- Present)}
-\vspace{-0.5em}
-\begin{itemize}
-    \item Accelerated multi-terabyte scientific calculations by developing and optimizing parallelized C++ CUDA kernels for GPU-accelerated HPC clusters (NERSC Perlmutter), significantly reducing runtime for large-scale Hamiltonian Monte Carlo simulations.
-    \vspace{-0.5em}
-    \item Managed and executed 75,000+ CPU/GPU compute hours by designing and deploying custom SLURM workflows for large-scale job orchestration
-    \vspace{-0.5em}
-\end{itemize}
-
-    \item  \textbf{North Carolina State University} - Mathematical Physics  \hfill \textit{(Dec 2020 - Present)}
-\vspace{-0.5em}
-\begin{itemize}
-    \item Implemented and managed Mathematica symbolic computation workflows on HPC clusters to analyze complex algebraic structures and symmetry constraints.
-\end{itemize}
-
-\end{enumerate}
-
-\vspace{0.5em}
+\vspace{0.3em}
 \section*{Technical Projects}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}
-        \item \textbf{Cost-Aware Multi-Agent LLM Router}  
+    \item \textbf{Cost-Aware Multi-Agent LLM Router}
     \hfill \href{https://github.com/Hariprashad-Ravikumar/Cost-Aware-Multi-Agent-LLM-Router}{GitHub} $|$ \href{https://calibrated-router-768949786238.us-central1.run.app/}{Live Demo} \\
     \vspace{-2em}
     \begin{itemize}
-    \item Cut LLM inference cost 93.9\% versus always using the top-tier model, with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout, by designing a calibrated confidence router (logistic regression over logprob uncertainty, self-consistency dispersion, and embedding-distance features) that escalates only the prompts likely to need a costlier model
-    \vspace{-0.5em}
-    \item Validated router confidence for honesty, not just raw accuracy, using Expected Calibration Error and Brier score, then deployed it as a production FastAPI service with Postgres decision logging, Redis caching, and an async circuit breaker on Google Cloud Run
+        \item Cut LLM inference cost 93.9\% versus always calling the top-tier model, with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout
+        \vspace{-0.5em}
+        \item Built the routing logic as a calibrated confidence model (logistic regression over logprob uncertainty, self-consistency dispersion, and embedding-distance features) that escalates only the prompts likely to need a costlier model
+        \vspace{-0.5em}
+        \item Validated router confidence for honesty as well as raw accuracy using Expected Calibration Error and Brier score, then deployed it as a FastAPI service with Postgres decision logging, Redis caching, and an async circuit breaker on Google Cloud Run
     \end{itemize}
-    
-    \item \textbf{AI-DataScience-Lab: Full-Stack Data Product}  
+
+    \item \textbf{AI-DataScience-Lab: Full-Stack Data Product}
     \hfill \href{https://github.com/Hariprashad-Ravikumar/AI-DataScience-Lab}{GitHub} $|$ \href{https://hariprashad-ravikumar.github.io/AI-DataScience-Lab}{Live App} \\
     \vspace{-2em}
     \begin{itemize}
-    \item Prototyped and deployed a scalable full-stack data tool (Python, Flask, Azure) to deliver on-demand data-driven insights and actionable recommendations, integrating an OpenAI API to demonstrate automated data storytelling and data interpretation.
-    \vspace{-0.5em}
-    \item Implemented an end-to-end statistical analysis pipeline using Python (Pandas) for data cleaning, statistical modeling (Scikit-learn) for regression, and Matplotlib for data visualization.
+        \item Shipped a public Flask/Azure statistics app that takes a user from raw upload through Pandas cleaning, Scikit-learn regression, and plotted output in one pass, with an OpenAI-generated narrative summary of the results
     \end{itemize}
 \end{enumerate}
 
+\vspace{0.3em}
+\section*{Research Collaborations}
+\hrule
+\vspace{-0.3em}
+\begin{enumerate}
+    \item \textbf{Los Alamos National Laboratory} - Lattice Quantum Chromodynamics \hfill \textit{(May 2024 -- Present)}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Ported multi-terabyte Hamiltonian Monte Carlo calculations to parallelized C++/CUDA kernels on GPU-accelerated HPC clusters (NERSC Perlmutter) to cut per-job runtime
+        \vspace{-0.5em}
+        \item Ran 75,000+ CPU/GPU compute hours through custom SLURM workflows built for job orchestration at that scale
+    \end{itemize}
+
+    \item \textbf{North Carolina State University} - Mathematical Physics \hfill \textit{(Dec 2020 -- Present)}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Analyzed algebraic symmetry constraints with Mathematica symbolic computation on HPC clusters, producing a first-author Physical Review D paper (113, 096018, 2026)
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.3em}
 \section*{Selected Publications \hfill \normalsize\normalfont \href{https://scholar.google.com/citations?user=o6cDFRwAAAAJ&hl=en}{Google Scholar}}
 \hrule
 \vspace{-0.3em}
 \begin{enumerate}[leftmargin=1.5em]
-    \item C.-R. Ji and \textbf{H. Ravikumar}, \textit{"Interpolating conformal algebra in (1+1) dimensions,"} \textbf{Physical Review D} 113, 096018 (May 2026). DOI: \href{https://doi.org/10.1103/prlq-4j1l}{10.1103/prlq-4j1l}.
+    \item C.-R. Ji and \textbf{H. Ravikumar}, \textit{"Interpolating conformal algebra in (1+1) dimensions,"} \textbf{Physical Review D} 113, 096018 (May 2026). DOI: \href{https://doi.org/10.1103/prlq-4j1l}{10.1103/prlq-4j1l}
 \end{enumerate}
 
-%%
+\vspace{0.3em}
 \section*{Technical Skills}
 \hrule
-\vspace{-0.3em}
-\begin{tabbing}
-\hspace{3.5cm} \= \kill
-\textbf{Programming} \> Python, C++, CUDA, Bash, SQL, Lua, HTML/CSS, YAML \\
-\textbf{ML \& APIs}    \> PyTorch, TensorFlow, Scikit-learn, Pandas, Dash, Plotly, Flask, FastAPI, Numba\\
-\textbf{Cloud \& MLOps}\> Azure, AWS (S3, Lambda), Docker, Kubernetes, Jenkins, CI/CD, Git, SLURM\\
-\textbf{Methods \& HPC} \> Parallel Computing (GPU, MPI), Numerical Methods (PDEs, Monte Carlo, Regression)
-\end{tabbing}
+\vspace{0.3em}
+\textbf{Methods \& HPC:} Parallel Computing (GPU, MPI), Numerical Methods (PDEs, Monte Carlo, Regression) \\
+\textbf{Programming:} Python, C++, CUDA, Bash, SQL \\
+\textbf{ML \& APIs:} PyTorch, TensorFlow, Scikit-learn, Pandas, Dash, Plotly, Flask, FastAPI, Numba \\
+\textbf{Cloud \& MLOps:} Azure, AWS (S3, Lambda), Docker, Kubernetes, Jenkins, CI/CD, Git, SLURM
 
+\vspace{0.3em}
 \section*{Education}
 \hrule
 \vspace{0.3em}
+\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 -- Dec 2026 (expected)} \\
+\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 -- May 2024}
 
-\textbf{PhD in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – Dec 2026 (expected)} \\
-%\textit{(Relevant Coursework: Advanced Computational Physics, Statistical Mechanics, Quantum Computing)}\\
-\textbf{MS in Physics}, New Mexico State University, USA \hfill \textit{Aug 2021 – May 2024} 
-
-\vspace{-1em}
-% Certification
-\section*{Certifications}
-\hrule
-\vspace{-0.3em}
-\begin{itemize}
-    \item \href{https://learn.nvidia.com/certificates?id=mMWLgny_SEC5DgHXY9XYEw}{Fundamentals of Accelerated Computing with CUDA Python by NVIDIA} 
-    \item \href{https://www.coursera.org/account/accomplishments/verify/XG3YT41S0PF5}{Advanced Learning Algorithms by DeepLearning.AI} 
-    \item \href{https://coursera.org/share/b9cffe9c5ba5832ffb99bf7abdd8c384}{Supervised Machine Learning: Regression and Classification by DeepLearning.AI} 
-    \item \href{https://www.coursera.org/account/accomplishments/professional-cert/certificate/U0HU8UKT89L4}{Google Advanced Data Analytics Professional Certificate} 
-\end{itemize}
-
-
+\vspace{0.3em}
 \section*{Awards}
 \hrule
 \vspace{-0.3em}
-
 \begin{itemize}
-    \item \textbf{2025 NMC Collaboration Grant}, awarded by the New Mexico Consortium to conduct my independent research project in collaboration with scientists at Los Alamos National Laboratory
+    \item \textbf{2025 NMC Collaboration Grant}, awarded by the New Mexico Consortium for an independent research project in collaboration with scientists at Los Alamos National Laboratory
     \vspace{-0.5em}
     \item \textbf{2023 George and Barbara Goedecke Physics Excellence Fund Scholarship}, awarded by the NMSU Physics Department
-    \vspace{-0.5em}
-   %\item \textbf{2021 Graduate Success Scholarship}, awarded by the NMSU Graduate School
 \end{itemize}
 
-
+\vspace{0.3em}
 \section*{Leadership}
 \hrule
 \vspace{-0.3em}
 \begin{itemize}
-    \item \textbf{Vice President}, Physics Graduate Student Organization (NMSU)  \hfill \textit{Aug 2025 -- Present} \\ Organized professional development events and served as the primary liaison between 40+ graduate students and faculty.
-    
+    \item \textbf{Vice President}, Physics Graduate Student Organization (NMSU) \hfill \textit{Aug 2025 -- Present} \\ Organized professional development events and served as primary liaison between 40+ graduate students and faculty
 \end{itemize}
-
-\section*{Relevant Graduate Coursework}
-\hrule
-\vspace{-0.3em}
-\begin{itemize}
-    \item Quantum Computing, Advanced Computational Physics, Statistical Mechanics, Electromagnetic Theory I \& II
-\end{itemize}
-
-
 
 \end{document}
