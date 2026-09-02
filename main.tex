@@ -69,7 +69,7 @@
     \begin{itemize}
         \item Cut LLM inference cost 93.9\% versus always calling the top-tier model, with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout
         \vspace{-0.5em}
-        \item Built the routing logic as a calibrated confidence model (logistic regression over logprob uncertainty, self-consistency dispersion, and embedding-distance features) that escalates only the prompts likely to need a costlier model
+        \item Built the routing logic as a calibrated confidence model (scikit-learn logistic regression over logprob uncertainty, self-consistency dispersion, and MiniLM sentence-transformer embedding-distance features) that escalates only the prompts likely to need a costlier model, degrading gracefully when the embedding model is unavailable
         \vspace{-0.5em}
         \item Validated router confidence for honesty as well as raw accuracy using Expected Calibration Error and Brier score, then deployed it as a FastAPI service with Postgres decision logging, Redis caching, and an async circuit breaker on Google Cloud Run
     \end{itemize}
