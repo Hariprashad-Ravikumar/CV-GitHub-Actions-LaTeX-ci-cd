@@ -2,11 +2,20 @@ name: Build LaTeX PDF and push to GitHub Pages repo
 
 on:
   push:
+    branches:
+      - main
     paths:
       - '**/*.tex'
       - '**/*.bib'
       - '**/*.sty'
       - '.github/workflows/latex-build.yml'
+  workflow_dispatch:
+
+# Only one publish at a time. Without this, two pushes close together race
+# and whichever run *finishes* last wins, which can republish an older PDF.
+concurrency:
+  group: publish-cv
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -14,7 +23,7 @@ jobs:
 
     steps:
       - name: Checkout code (CV_HARI repo)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install LaTeX & latexmk
         run: |
@@ -40,8 +49,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add cv/CV_HARI.pdf
-          git commit -m "Auto-update CV_HARI.pdf from CV_HARI repo"
-          git push origin main
+          if git diff --cached --quiet; then
+            echo "PDF is unchanged; nothing to publish."
+          else
+            git commit -m "Auto-update CV_HARI.pdf from CV_HARI repo"
+            git push origin main
+          fi
 
       - name: Clean PDF from original CV_HARI repo (optional cleanup)
         run: |
