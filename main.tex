@@ -16,7 +16,7 @@
 
 \begin{center}
   \textbf{\Huge Hariprashad Ravikumar} \\[0.6em]
-  \textbf{Machine Learning / Research Engineer} $|$ PhD Physics, Dec 2026 $|$ CUDA $\cdot$ HPC $\cdot$ LLM Systems \\[0.3em]
+  Machine Learning Research Engineer $|$ PhD Physics, Dec 2026 $|$ CUDA $\cdot$ HPC $\cdot$ LLM Systems \\[0.3em]
   San Jose, CA $\cdot$ Available Jan 2027 \\[0.4em]
   \href{mailto:hari1729@nmsu.edu}{hari1729@nmsu.edu} $\cdot$ +1 575-249-9610 $\cdot$ \href{https://www.linkedin.com/in/hariprashad-ravikumar}{linkedin.com/in/hariprashad-ravikumar} \\
   \href{https://github.com/Hariprashad-Ravikumar}{github.com/Hariprashad-Ravikumar} $\cdot$ \href{https://hariprashad-ravikumar.github.io}{hariprashad-ravikumar.github.io}
@@ -63,23 +63,20 @@
 \hrule
 \vspace{-0.3em}
 \begin{itemize}[label={}, leftmargin=0pt]
-    \item \textbf{Cost-Aware Multi-Agent LLM Router}
-    \hfill \href{https://github.com/Hariprashad-Ravikumar/Cost-Aware-Multi-Agent-LLM-Router}{GitHub} $|$ \href{https://calibrated-router-768949786238.us-central1.run.app/}{Live Demo} \\
-    \vspace{-2em}
-    \begin{itemize}
-        \item Cut LLM inference cost 93.9\% versus always calling the top-tier model, with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout
-        \vspace{-0.5em}
-        \item Built the routing logic as a calibrated confidence model (scikit-learn logistic regression over logprob uncertainty, self-consistency dispersion, and MiniLM sentence-transformer embedding-distance features) that escalates only the prompts likely to need a costlier model, degrading gracefully when the embedding model is unavailable
-        \vspace{-0.5em}
-        \item Validated router confidence for honesty as well as raw accuracy using Expected Calibration Error and Brier score, then deployed it as a FastAPI service with Postgres decision logging, Redis caching, and an async circuit breaker on Google Cloud Run
-    \end{itemize}
-
     \item \textbf{Transformer Pretrained From Scratch}
     \hfill \href{https://huggingface.co/spaces/hari-8/transformer-pretraining-demo}{Hugging Face} $|$ \href{https://github.com/Hariprashad-Ravikumar/transformer-pretraining-from-scratch}{GitHub} \\
     \vspace{-2em}
     \begin{itemize}
         \item Independently pretrained a 57M-parameter transformer from scratch in PyTorch, achieving 1.057 bits-per-byte (a tokenizer-agnostic metric, comparable across models with different vocabularies) versus 1.135 for a same-size Pythia-70M baseline, by building the full pipeline: custom tokenizer, sharded data loading, and fault-tolerant checkpointing on Google Cloud (GCP) Spot GPUs
         \item Deployed the trained model to Hugging Face Hub, eliminating recurring hosting costs by serving inference entirely client-side via Open Neural Network Exchange (ONNX) Runtime Web
+    \end{itemize}
+    
+    \item \textbf{Cost-Aware Multi-Agent LLM Router}
+    \hfill \href{https://github.com/Hariprashad-Ravikumar/Cost-Aware-Multi-Agent-LLM-Router}{GitHub} $|$ \href{https://calibrated-router-768949786238.us-central1.run.app/}{Live Demo} \\
+    \vspace{-2em}
+    \begin{itemize}
+        \item Built a calibrated LLM routing system, cutting inference cost 93.9\% versus always calling the frontier model with no statistically distinguishable accuracy loss on a 50-prompt disjoint holdout, by training a logistic regression over logprob uncertainty, self-consistency dispersion, and MiniLM embedding-distance features, and validating it for honesty using Expected Calibration Error and Brier score
+        \item Extended the system into a multi-agent conversational mode using LangGraph (planner, parallel specialist dispatch, synthesizer) with session and cross-session memory via Redis and pgvector, deployed as a FastAPI service with Postgres logging and an async circuit breaker on Google Cloud Run
     \end{itemize}
 \end{itemize}
 
@@ -118,7 +115,7 @@
 \textbf{Methods \& HPC:} Parallel Computing (GPU, MPI), Numerical Methods (PDEs, Monte Carlo, Regression) \\
 \textbf{Programming:} Python, C++, CUDA, Bash, SQL \\
 \textbf{ML \& APIs:} PyTorch, TensorFlow, Scikit-learn, Pandas, Dash, Plotly, Flask, FastAPI, Numba \\
-\textbf{Cloud \& MLOps:} Azure, AWS (S3, Lambda), Docker, Kubernetes, Jenkins, CI/CD, Git, SLURM
+\textbf{Cloud \& MLOps:} Azure, AWS (S3, Lambda), Hugging Face, Docker, Kubernetes, Jenkins, CI/CD, Git, SLURM
 
 \vspace{0.3em}
 \section*{Education}
